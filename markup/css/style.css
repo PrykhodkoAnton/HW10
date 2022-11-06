@@ -1,0 +1,64 @@
+header {
+    background-color: black;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    border: 1px solid red;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    background-color: black;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.prod {
+    position: relative;
+}
+
+.menu2 {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+.menu2 li {
+    display:block;
+}
+
+.prod2 {
+    position: relative;
+}
+
+.menu3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.prod:hover .menu2 {
+    display: block;
+}
+
+.prod2:hover .menu3 {
+    display: block;
+}
