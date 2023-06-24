@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 50px;
+}
+.el{
+    margin: 0 auto;
+    font-size: 9px;
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.one{
+    background-color: red;
+    color: blue;
+    animation-name: colorBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorBox {
+    50%{
+        background-color: blue;
+        color: red;
+    }
+
+}
+
+.two{
+    background-color: aquamarine;
+    margin: 200px auto;
+    animation-name: boxSize;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxSize {
+    50%{
+        transform: scale(2, 2);
+    }
+}
+
+.three{
+    background-color: rgb(99, 99, 99);
+    color: white;
+    animation-name: boxOpacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxOpacity{
+    50%{
+        opacity: 0%;
+    }
+}
